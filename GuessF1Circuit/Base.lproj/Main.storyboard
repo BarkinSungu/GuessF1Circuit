@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDC-i3-h6F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessF1Circuit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRE-VM-tnX">
+                                <rect key="frame" x="47.5" y="379.5" width="319" height="239"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="INTERCITY ISTANBUL PARK"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qod-u1-7b0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFe-aK-zXh">
+                                <rect key="frame" x="47.5" y="104" width="319" height="239"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="INTERCITY ISTANBUL PARK"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6V-Ru-7to"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vRE-VM-tnX" firstAttribute="centerX" secondItem="tFe-aK-zXh" secondAttribute="centerX" id="35g-Sg-f7l"/>
+                            <constraint firstItem="tFe-aK-zXh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="G6R-ds-Wc2"/>
+                            <constraint firstItem="vRE-VM-tnX" firstAttribute="top" secondItem="tFe-aK-zXh" secondAttribute="bottom" constant="36.5" id="hs6-qU-MOo"/>
+                            <constraint firstItem="tFe-aK-zXh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="swl-kC-MuV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j4a-L7-aap"/>
+                    <connections>
+                        <outlet property="Button1" destination="tFe-aK-zXh" id="WlW-ki-vIk"/>
+                        <outlet property="Button2" destination="vRE-VM-tnX" id="OwL-xS-beE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mkz-aA-2bt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDC-i3-h6F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zr9-Vd-7tb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WPq-Mw-Fed"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjw-JE-t3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="INTERCITY ISTANBUL PARK" width="319" height="239"/>
+    </resources>
+</document>
